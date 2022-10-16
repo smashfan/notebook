@@ -127,9 +127,13 @@ forward(*input)
     】,因为前者(即:model(input_data))会小心地处理并执行相关地注册登记好
     的钩子函数,然而后者(即:model.forward(input_data))仅仅静默地忽略掉
     这些钩子函数.
-### 6.super(LeNet, self).__init__()
+### 6.super(LeNet, self).\_\_init\_\_()
 
-`super用于继承中的代指父类（多重继承时指最近的父类），`可以隐式地将子类中的方法与父类的方法关联，这样做可以解决基类重复调用以及父类变更时免去函数内容的修改。
+概述：`super用于继承中的代指父类（多重继承时指最近的父类），`
+
+可以隐式地将子类中的方法与父类的方法关联，
+
+作用：这样做可以解决基类重复调用以及父类变更时免去函数内容的修改。
 
 此处，super指nn.Module,调用了其__init__（）函数：	
 
@@ -151,9 +155,12 @@ class Module(object):
     self._modules = OrderedDict()
 也就是说，super的目的在于初始化了Module中的这些参数
 
+> 两种使用方式
+>
+> 1. super(cls,obj).classfunc 是个’method’，即视作类方法，obj作为X.classfunc的第一个self参数自动传入（隐式传入）
+> 2. super(cls,cls).classfunc是个’function’,即视作独立的普通函数，其原型中的第一个self参数也需要手动写入（显示传入
 
-
-### 7..named_children()
+### 7.named_children()
 
 遍历net一级 子模块
 
@@ -192,4 +199,8 @@ model.train()
 - eval()
   不启用 BatchNormalization 和 Dropout，保证BN和dropout不发生变化，pytorch框架会自动把BN和Dropout固定住，不会取平均，而是用训练好的值，不然的话，一旦test的batch_size过小，很容易就会被BN层影响结果。
 
+### 8.MaxPool2d详解
 
+![image-20221016201229815](pytorch理解.assets/image-20221016201229815.png)
+
+tips: padding 默认为kernel的大小
