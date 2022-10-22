@@ -8,11 +8,26 @@ tip：注意用逗号区别的时候不要有空格
 
 # 增
 
+1.loc
+
 ```
+data=pd.DataFrame(columns=["x","y"])
 data.loc[i]=[,,,,]
 ```
 
+2.append
 
+```
+    import pandas as pd
+    
+    data = pd.DataFrame()
+    a = {"x":1,"y":2}
+    data = data.append(a,ignore_index=True)
+    print(data)
+
+```
+
+3，concat
 
 # 删
 

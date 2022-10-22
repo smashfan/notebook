@@ -1,6 +1,6 @@
 nvida-smi -L  显示全部名字
 
-
+watch -n 1 gpustat
 
 训练实际情况,多GPU
 
