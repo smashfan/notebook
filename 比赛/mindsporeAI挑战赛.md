@@ -74,3 +74,13 @@ lr：随着batch*gpu的正比关系
 
 
 backbone选择：resnet50，88，swin 88，89
+
+尝试：
+
+1.step=[30,60,90]  lr=0.1，samples_per_gpu=256,frozen_stages=4, 85
+
+2.step=[20,40，60,90]  lr=0.1，samples_per_gpu=256,frozen_stages=2,  88
+
+3.step=[30,60,90]  lr=0.1，samples_per_gpu=64,frozen_stages=2, 88 
+
+4.step=[20,40,60]  lr=0.1，samples_per_gpu=64,frozen_stages=2, 89
