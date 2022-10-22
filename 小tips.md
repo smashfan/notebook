@@ -50,7 +50,7 @@
 
 ​                   
 $$
-\text { Accuracy }=\frac{\text { True Positives }+\text { True Negatives }}{\text { Total # samples }}
+\text { Accuracy }=\frac{\text { True Positives }+\text { True Negatives }}{\text { Total  samples }}
 $$
 
 

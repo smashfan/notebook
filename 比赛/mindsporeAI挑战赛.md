@@ -1,3 +1,22 @@
+### 训练
+
+```
+python tools/train.py  configs/myconfigs/resnet50_for_caltech.py  单gpu
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 1.先用mmcls提交答案
 
 了解配置
