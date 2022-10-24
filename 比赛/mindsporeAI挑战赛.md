@@ -187,7 +187,7 @@ batch提高，会降低准确率，小batch的的时候。梯度下降是随机�
 
 10.step=[20,40,60]  lr=0.1，samples_per_gpu=32,frozen_stages=2, swin式数据增强，
 
-policies=[AutoContrast,Equalize,Invert,Rotate，Posterize，Solarize，SolarizeAdd，ColorTransform，Contrast，Brightness，Sharpness，Shear，Translate]    90.5
+policies=[AutoContrast,Equalize,Invert,Rotate，Posterize，Solarize，SolarizeAdd，ColorTransform，Contrast，Brightness，Sharpness，Shear，Translate]    90.5  不稳定
 
 11.lr_config = dict(
 
@@ -201,4 +201,16 @@ policies=[AutoContrast,Equalize,Invert,Rotate，Posterize，Solarize，SolarizeA
 
 ​    warmup_iters=1500,
 
-​    warmup_ratio=0.25) 90.1
+​    warmup_ratio=0.25) 90.4
+
+12.step=[30,60,90] 90.05
+
+
+
+> https://xihe.mindspore.cn/competition/3/0/leaderboard
+>
+> https://aistudio.baidu.com/aistudio/projectdetail/1551646 飞浆比赛总结
+>
+> https://blog.csdn.net/u010165147/article/details/78633858
+
+如何将top5提升到top1

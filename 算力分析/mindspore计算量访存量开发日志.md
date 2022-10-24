@@ -1,13 +1,11 @@
-
-
 # 流程
 
 ### 1.查看mindspore profiler里面的代码
 
 		1.	_get_peak_flops() //得到峰值设备flops
-  		2.	_get_op_avg_time_dict()//得到算子平均执行时间
-                		3.	。。_compute_task_flops
-            		4.	2看pytorch的插件thop
+		2.	_get_op_avg_time_dict()//得到算子平均执行时间
+	            		3.	。。_compute_task_flops
+	        		4.	2看pytorch的插件thop
 
 ### 3.查看ptflops代码
 

@@ -6,6 +6,16 @@ pd.read_csv
 
 tip：注意用逗号区别的时候不要有空格
 
+**读取的时候去除多的索引**
+
+dataframe=pd.read_csv("dataset.csv",index_col=0)
+
+注意，这个容易把index的title变没
+
+保存的时候不保存索引
+
+dataframe.to_csv("dataset.csv"，index=None)
+
 # 增
 
 1.loc
@@ -28,6 +38,28 @@ data.loc[i]=[,,,,]
 ```
 
 3，concat
+
+​	一,基本语法
+
+```
+pd.concat(
+     objs,      
+     axis=0,     
+     join='outer',
+     ignore_index=False,
+     keys=None,      
+     levels=None,     
+     names=None,      
+     verify_integrity=False,     
+     copy=True)
+     
+ axis=0:纵向拼接
+ axis=1:横向拼接
+```
+
+### 增加新列
+
+
 
 # 删
 
@@ -53,3 +85,9 @@ print(data.columns.values)
 ```
 
 2
+
+# 修改
+
+pandas修改指定行
+
+dataframe.loc[index]=[index,channel_out,kernel_size]
