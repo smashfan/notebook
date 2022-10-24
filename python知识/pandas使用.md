@@ -18,16 +18,23 @@ dataframe.to_csv("dataset.csv"，index=None)
 
 # 增
 
+### 增加行
+
 1.loc
 
-```
+```python
 data=pd.DataFrame(columns=["x","y"])
 data.loc[i]=[,,,,]
+
+data.loc[0:2,'年龄':'职业']
+解释：
+1.从data中选取列名为年龄到职业之间的所有字段
+2.0:2指的是选取行数，选0-2一共3行数据
 ```
 
 2.append
 
-```
+```python
     import pandas as pd
     
     data = pd.DataFrame()
@@ -37,7 +44,23 @@ data.loc[i]=[,,,,]
 
 ```
 
-3，concat
+3.concat
+
+### 增加列
+
+```python
+一.insert()函数
+df.insert(loc=2, column='c', value=3)  # 在最后一列后，插入值全为3的c列
+print('插入c列：\n', df)
+二、直接赋值法
+语法：df[‘新列名’]=新列的值
+实例：插入d列
+三、reindex()函数
+四、concat()函数
+五、loc()函数
+```
+
+
 
 ​	一,基本语法
 
