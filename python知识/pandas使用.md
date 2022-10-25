@@ -1,3 +1,14 @@
+# 创建
+
+```python
+data = {'name': ['John', 'Mike', 'Mozla', 'Rose', 'David', 'Marry', 'Wansi', 'Sidy', 'Jack', 'Alic'],
+        'age': [20, 32, 29, np.nan, 15, 28, 21, 30, 37, 25],
+        'gender': [0, 0, 1, 1, 0, 1, 0, 0, 1, 1],
+        'isMarried': ['yes', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no']}
+```
+
+
+
 # 读取和保存
 
 ### 1.读取cvs
@@ -46,22 +57,6 @@ data.loc[0:2,'年龄':'职业']
 
 3.concat
 
-### 增加列
-
-```python
-一.insert()函数
-df.insert(loc=2, column='c', value=3)  # 在最后一列后，插入值全为3的c列
-print('插入c列：\n', df)
-二、直接赋值法
-语法：df[‘新列名’]=新列的值
-实例：插入d列
-三、reindex()函数
-四、concat()函数
-五、loc()函数
-```
-
-
-
 ​	一,基本语法
 
 ```
@@ -76,11 +71,29 @@ pd.concat(
      verify_integrity=False,     
      copy=True)
      
- axis=0:纵向拼接
- axis=1:横向拼接
+ axis=0:纵向拼接 注意index
+ axis=1:横向拼接  会出现空值none
 ```
 
 ### 增加新列
+
+```
+一.insert()函数
+df.insert(loc=2, column='c', value=3)  # 在最后一列后，插入值全为3的c列
+print('插入c列：\n', df)
+二、直接赋值法
+语法：df[‘新列名’]=新列的值
+实例：插入d列
+三、reindex()函数
+四、concat()函数
+五、loc()函数
+```
+
+### 两个表相同的行合并成一个表
+
+```
+
+```
 
 
 
@@ -107,7 +120,21 @@ print(data.columns.values)
 ['COUNT' 'SUCC' 'FAIL' 'WAIT PAY' 'SUCCRatio' 'time']
 ```
 
-2
+### 2取值
+
+```python
+pandas.DataFrame.at
+根据行索引和列表取出一个值
+df.at[4,"B"]
+或者 df.iloc[5].at['B']
+或者
+df.loc['cobra', 'shield']
+df.loc[name='cobra',"shild"] 必须要行号和列才能取得唯一的值
+
+所以需要data1.loc[data1.name==name,"out"].index.tolist()[0]
+```
+
+
 
 # 修改
 
