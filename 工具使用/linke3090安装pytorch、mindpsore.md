@@ -4,13 +4,13 @@ ubuntu20.04
 
 nvidia-smi
 
-![image-20220915164909542](D:\alphawork\工具使用\linke3090安装pytorch、mindpsore.assets\image-20220915164909542.png)
+![image-20220915164909542](linke3090安装pytorch、mindpsore.assets\image-20220915164909542.png)
 
 nvcc-V
 
 
 
-![image-20220915164921782](D:\alphawork\工具使用\linke3090安装pytorch、mindpsore.assets\image-20220915164921782.png)
+![image-20220915164921782](linke3090安装pytorch、mindpsore.assets\image-20220915164921782.png)
 
 ## 2.pytorch安装
 
@@ -99,3 +99,11 @@ pip install -v -e .
 ```
 
 2.测试
+
+
+
+
+
+### 参考文献
+
+https://zhuanlan.zhihu.com/p/336429888
