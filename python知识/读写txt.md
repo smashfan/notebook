@@ -9,3 +9,5 @@ f=open("fle","w")
 ```
 
 ### 循环读取每一行
+
+l=f.readlines()
