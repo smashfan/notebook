@@ -109,3 +109,13 @@ git push -f [数据源] [分支名]
 git push -f origin master
 ```
 
+### git 查看commit修改信息
+
+```
+1.git log 查看本地commit记录
+2.git show commitid
+```
+
+
+
+### 如何利用git解决冲突

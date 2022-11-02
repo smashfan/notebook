@@ -294,3 +294,9 @@ ImportError: libcudnn.so.7: cannot open shared object file: No such file or dire
 export LD_LIBRARY_PATH="/usr/local/cuda-10.1/lib64/"
 
 source ~/.bashrc（重点要source一下）
+
+
+
+### 参考文献
+
+https://zhuanlan.zhihu.com/p/336429888
