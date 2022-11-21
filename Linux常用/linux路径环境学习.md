@@ -19,3 +19,14 @@
 
 
 https://blog.csdn.net/qq_41739313/article/details/120079555?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-120079555-blog-125402585.t5_refersearch_landing&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
+
+
+
+
+
+
+### LD_LIBRARY_PATH
+
+> 作用于将动态链接库加入环境变量中
+

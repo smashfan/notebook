@@ -204,3 +204,7 @@ model.train()
 ![image-20221016201229815](pytorch理解.assets/image-20221016201229815.png)
 
 tips: padding 默认为kernel的大小
+
+9.tensor.unsquzeeze()
+
+`unsqueeze()`用于增加一个维度,括号里面指明增加哪维
