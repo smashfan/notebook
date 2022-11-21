@@ -17,5 +17,10 @@ output_path = '/home/liulihao/test/demo.jpg'
 save_image = np.zeros([200,100,3])
 cv2.imwrite(output_path, save_image)
 
+
+#展示图片
+cv2.imshow("image",face)
+cv2.waitKey() 
+
 ```
 
