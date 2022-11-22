@@ -69,3 +69,37 @@ generateinputData()
 获取输出
 
 内存释放
+
+
+
+
+
+### 如何绑定cpu核
+
+![image-20221121174206880](mslitebenchmark研究.assets/image-20221121174206880.png)
+
+core_affinity.h
+
+![image-20221121175600772](mslitebenchmark研究.assets/image-20221121175600772.png)
+
+sorted_id_：按照频率降序排列
+
+core.affinity.cc
+
+![image-20221121175800488](mslitebenchmark研究.assets/image-20221121175800488.png)
+
+
+
+![image-20221121180156597](mslitebenchmark研究.assets/image-20221121180156597.png)
+
+actor_threadpool.cc
+
+![image-20221121190857296](mslitebenchmark研究.assets/image-20221121190857296.png)
+
+
+
+
+
+
+
+x86查看cpu频率：cat /proc/cpuinfo
