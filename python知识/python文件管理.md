@@ -8,6 +8,14 @@ os.makedirs
 
 - os.remove()删除文件
 
+# 改
+
+改名字：
+
+```
+os.rename(src, dst)
+```
+
 # 查
 
 ### 查路径下的文件
