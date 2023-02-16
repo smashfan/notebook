@@ -92,7 +92,8 @@ print('插入c列：\n', df)
 ### 两个表相同的行合并成一个表
 
 ```
-
+使用ignore_index=True可以忽略原来的索引
+pd.concat([df1,df2], ignore_index=True)
 ```
 
 
@@ -127,6 +128,8 @@ pandas.DataFrame.at
 根据行索引和列表取出一个值
 df.at[4,"B"]
 或者 df.iloc[5].at['B']
+
+data = data.iloc[:, 0:3] # 按位置取某几列
 或者
 df.loc['cobra', 'shield']
 df.loc[name='cobra',"shild"] 必须要行号和列才能取得唯一的值
@@ -141,3 +144,26 @@ df.loc[name='cobra',"shild"] 必须要行号和列才能取得唯一的值
 pandas修改指定行
 
 dataframe.loc[index]=[index,channel_out,kernel_size]
+
+# 替换
+
+```
+pandas.Series.replace 官方文档
+```
+
+[pandas.Series.replace 官方文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.replace.html)
+
+Series.replace(to_replace=None, value=NoDefault.no_default, inplace=False, limit=None, regex=False, method=NoDefault.no_default)
+
+to_replace: 需要替换的值
+value：替换后的值
+inplace: 是否在原数据表上更改，默认 inplace=False
+limit：向前或向后填充的最大尺寸间隙，用于填充缺失值
+regex: 是否模糊查询，用于正则表达式查找，默认 regex=False
+method: 填充方式，用于填充缺失值(The method to use when for replacement, when to_replace is a scalar, list or tuple and value is None.)
+pad: 向前填充
+ffill: 向前填充
+bfill: 向后填充
+————————————————
+版权声明：本文为CSDN博主「羊羊猪」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_46599926/article/details/122846157

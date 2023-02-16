@@ -27,10 +27,13 @@ adb push mindspore-lite-1.8.1-android-aarch64 /storage/emulated/0/test/model
 ##  benchmark
 
 ```shell
-export LD_LIBRARY_PATH=/data/local/tmp/mindspore-lite-1.8.1-android-aarch64/runtime/lib:$LD_LIBRARY_PATH
+n
 
 export LD_LIBRARY_PATH=/storage/emulated/0/test/model/mindspore-lite-1.8.1-android-aarch64/runtime/lib:$LD_LIBRARY_PATH
 
+export LD_LIBRARY_PATH=/data/local/tmp/mindspore-lite-1.8.2-android-aarch64/runtime/lib:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=/data/local/tmp/0/runtime/lib:$LD_LIBRARY_PATH
 ```
 
 
@@ -40,7 +43,7 @@ export LD_LIBRARY_PATH=/storage/emulated/0/test/model/mindspore-lite-1.8.1-andro
 ```
 ./benchmark --modelFile=mobilenetv2.ms --timeProfiling=true
 ./benchmark --modelFile=/path/to/model.ms --perfProfiling=true --numThreads=1
-
+./benchmark --modelFile=vgg16_193.ms  --numThreads=1 --cpuBindMode=2
 ```
 
 ./benchmark --modelFile=mobilenetv2.ms --timeProfiling=true

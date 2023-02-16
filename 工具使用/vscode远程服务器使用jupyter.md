@@ -6,7 +6,30 @@ jupyter nootbook -allow-root
 
 3.vscode上连接这个服务器
 
+## 在win10中通过ssh连入服务器
 
+```text
+ssh -L [本地端口]:localhost:[远程端口] [远程用户名]@[远程IP] -p [ssh连接端口]
+```
+
+示例
+
+```bash
+ssh -L 8155:localhost:8892  Zyh@10.200.0.217 -p 22
+```
+
+在浏览器输入
+
+```text
+http://localhost:8155
+```
+
+
+
+作者：澄心
+链接：https://zhuanlan.zhihu.com/p/448198672
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ## Jupyter notebook 更换kernel
 

@@ -40,7 +40,7 @@ print(torch.rand(3,3).cuda())
 
 import torch
 import torchvision.models as models
-device1 = torch.device("cuda:1")
+device1 = torch.device("cuda:0")
 data = torch.randn(1, 3, 224, 224)
 data = data.to(device1)
 model = models.vgg16()
