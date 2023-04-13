@@ -63,3 +63,12 @@ python -m ipykernel install --user --name 环境名称 --display-name "显示的
 注意: 1.自己需要添加内核进去
 
 ​          2.jupyter notebook 启动进去可能一些没有权限,需要sudo  并且加上 --allow-root 
+
+#### 方法二：
+
+​	1.在环境中安装conda install nb_conda_kernels
+
+​	2.从该环境进入jupyter notebook就可以了
+
+
+

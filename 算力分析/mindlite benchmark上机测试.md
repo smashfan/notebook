@@ -42,7 +42,7 @@ export LD_LIBRARY_PATH=/data/local/tmp/0/runtime/lib:$LD_LIBRARY_PATH
 
 ```
 ./benchmark --modelFile=mobilenetv2.ms --timeProfiling=true
-./benchmark --modelFile=/path/to/model.ms --perfProfiling=true --numThreads=1
+    ./benchmark --modelFile=/path/to/model.ms --perfProfiling=true --numThreads=1
 ./benchmark --modelFile=vgg16_193.ms  --numThreads=1 --cpuBindMode=2
 ```
 
