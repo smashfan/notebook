@@ -133,3 +133,46 @@ git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy https://127.0.0.1:7890
 ```
 
+
+
+
+
+
+
+### 多人同步问题
+
+> 场景：因为有事情需回到学校搞毕设，同事在公司说接口代码有问题，需要修改；
+>
+> 我用笔记本把代码同步到笔记本，然后做了一些修改、提交。修改完成。
+>
+> 第二天我来到公司（公司里用台式机，不是自己的笔记本），忘了先git pull到本地之后，直接在台式机上的代码进行编写，突然想起忘了pull了，然后想用git pull来更新本地代码。结果报错：
+>
+> error: Your local changes to the following files would be overwritten by merge:
+>
+> 意思是我台式机上新修改的代码的文件，将会被git服务器上的代码覆盖；我当然不想刚刚写的代码被覆盖掉，看了git的手册，发现可以这样解决：
+>
+>
+> 方法1：如果你想保留刚才本地修改的代码，并把git服务器上的代码pull到本地（本地刚才修改的代码将会被暂时封存起来）
+>
+>
+> git stash
+> git pull origin master
+> git stash pop
+>
+>
+> 如此一来，服务器上的代码更新到了本地，而且你本地修改的代码也没有被覆盖，之后使用add，commit，push 命令即可更新本地代码到服务器了。
+>
+> 
+>
+> 方法2、如果你想完全地覆盖本地的代码，只保留服务器端代码，则直接回退到上一个版本，再进行pull：
+>
+> git reset --hard
+> git pull origin master
+>
+>
+> 注：其中origin master表示git的主分支。
+>
+>
+> ————————————————
+> 版权声明：本文为CSDN博主「misaka去年夏天」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+> 原文链接：https://blog.csdn.net/misakaqunianxiatian/article/details/51103734
