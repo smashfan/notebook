@@ -124,7 +124,7 @@ git push -f origin master
 
 
 
-
+先提交暂存（add），再拉取，pull拉取完之后（根据提示是否有冲突）再commi提交。如果有冲突就解决冲突
 
 ### git clash代理
 
