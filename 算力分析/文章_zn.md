@@ -434,7 +434,17 @@ In this section, we evaluate our system and baselines in various aspects to demo
 
 ### Discussion
 
-​	
+transformer的预测
+
+​	目前火热的大语言模型主要的算子是transformer，但是目前的边缘推理后端主要支持 CNN 模型，不支持语言模型。例如，mindspore lite不支持 transformer 算子 。因此，本文只对 CNN 模型进行了评估。未来如果支持这些算子，我们的方法同样适用，首先需要剖析transformer算子，计算它的flops和macs，然后对整个计算图计算邻接矩阵和特征矩阵。
+
+功耗预测
+
+​	实际上模型推理的功耗主要和它的计算量相关，由于一些框架对算子做了优化使得它运行的功耗会降低，并且，由于散热取决于难以建模的外部环境。因此预测会变成更加复杂。
+
+局限性：
+
+​	本方法方法的局限性在于需要对现有的算子进行白盒剖析，认识到的各种参数以及在实际环境下的数据建模，随着未来推理框架添加更多的未知的算子以及优化措施，我们还需要重新进行分析。为此，我们将在今后尽量维护和解决
 
 ### conclusion
 

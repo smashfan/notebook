@@ -1,0 +1,13 @@
+<mxfile host="Electron" modified="2023-09-11T11:25:51.283Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="1uwcD9ZxH8yKnv1z8HML" version="21.6.8" type="device">
+  <diagram name="第 1 页" id="Ysh0bYaYvzncVaAxSflE">
+    <mxGraphModel dx="838" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LGfR2pY10DzcNVxrijDs-1" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;是 的&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;shadow=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

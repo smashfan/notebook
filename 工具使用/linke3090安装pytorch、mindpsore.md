@@ -8,7 +8,14 @@ nvidia-smi
 
 nvcc-V
 
+```text
+export CUDA_HOME=/usr/local/cuda-12.1
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
+export PATH=${CUDA_HOME}/bin:${PATH}
 
+
+
+```
 
 ![image-20220915164921782](linke3090安装pytorch、mindpsore.assets\image-20220915164921782.png)
 

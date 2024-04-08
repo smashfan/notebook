@@ -62,7 +62,8 @@ git diff branch1 branch2 --stat
 > $ git config user.name “freedom”
 > 
 > 4.修改git用户名、密码、邮箱的配置（全局配置）
-> $ git config --global user.name “freedom”
+> $ git config --global user.name "fjq"
+> git config --global user.email "smashfan@mail.ustc."
 > ————————————————
 > 版权声明：本文为CSDN博主「默茉」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 > 原文链接：https://blog.csdn.net/weixin_43081805/article/details/125355169
